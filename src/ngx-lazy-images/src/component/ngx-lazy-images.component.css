@@ -1,4 +1,4 @@
-.placeholder {
+.ngx-lazy-placeholder {
     background-color: #f6f6f6;
     background-size: cover;
     background-repeat: no-repeat;
@@ -6,7 +6,7 @@
     overflow: hidden;
 }
 
-.placeholder img {
+.ngx-lazy-placeholder img {
     position: absolute;
     opacity: 0;
     top: 0;
@@ -15,11 +15,11 @@
     transition: opacity 1s linear;
 }
 
-.placeholder img.loaded {
+.ngx-lazy-placeholder img.loaded {
     opacity: 1;
 }
 
-.img-small {
+.ngx-lazy-img-small {
     filter: blur(50px);
     /* this is needed so Safari keeps sharp edges */
     transform: scale(1);

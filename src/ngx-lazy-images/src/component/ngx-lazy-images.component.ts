@@ -1,10 +1,9 @@
 import { Component, ViewChild, ElementRef, Renderer2, OnInit, Input } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
 
 import { fromEvent } from 'rxjs/Observable/fromEvent';
 
 @Component({
-  selector: 'ngx-lazy-images',
+  selector: 'ngx-lazy-image',
   templateUrl: './ngx-lazy-images.component.html',
   styleUrls: ['./ngx-lazy-images.component.css']
 })
@@ -14,6 +13,7 @@ export class LazyImagesComponent implements OnInit {
 
   @Input() largeImgUrl: string;
   @Input() thumbnailUrl: string;
+  @Input() lazyClasses: Object = {};
 
   private largeImageEl: HTMLImageElement;
 
@@ -22,6 +22,10 @@ export class LazyImagesComponent implements OnInit {
   ngOnInit() {
     this.largeImageEl = this.renderer.createElement('img');
     this.renderer.setAttribute(this.largeImageEl, 'src', this.largeImgUrl);
+
+    Object.keys(this.lazyClasses).forEach((styleKey) => {
+      this.renderer.setStyle(this.placeholder.nativeElement, styleKey, this.lazyClasses[styleKey]);
+    });
 
     this.renderer.listen(this.largeImageEl, 'load', (event) => {
       this.renderer.addClass(this.largeImageEl, 'loaded');
