@@ -30,8 +30,8 @@ Common tasks are present as npm scripts:
 
 If you need to debug the integration app, please check `./integration/README.md`.
 
-[travis-badge]: https://travis-ci.org/filipesilva/angular-lazy-images.svg?branch=master
-[travis-badge-url]: https://travis-ci.org/filipesilva/angular-lazy-images
+[travis-badge]: https://travis-ci.org/filipesilva/angular-ngx-lazy-images.svg?branch=master
+[travis-badge-url]: https://travis-ci.org/filipesilva/angular-ngx-lazy-images
 
 ## The QuickStart Library seed
 
@@ -47,7 +47,7 @@ is preferred, [Just-in-time](#appendix-supporting-jit) compilation should be sup
 Make sure you have at least Node 6.9 and NPM 3.0 installed.
 Then ...
 
-1. Create a project folder (you can call it `lazy-images` and rename it later).
+1. Create a project folder (you can call it `ngx-lazy-images` and rename it later).
 1. [Clone](#clone "Clone it from github") or [download](#download "download it from github") the **QuickStart Library seed** into your project folder.
 1. Install npm packages.
 1. Run `npm start` to launch the sample application.
@@ -58,19 +58,19 @@ Then ...
 Perform the _clone-to-launch_ steps with these terminal commands.
 
 ```
-git clone https://github.com/filipesilva/angular-lazy-images.git
-cd angular-lazy-images
+git clone https://github.com/filipesilva/angular-ngx-lazy-images.git
+cd angular-ngx-lazy-images
 npm install
 npm start
 ```
 
 
 ### Download
-[Download the QuickStart Library seed](https://github.com/filipesilva/angular-lazy-images/archive/master.zip)
+[Download the QuickStart Library seed](https://github.com/filipesilva/angular-ngx-lazy-images/archive/master.zip)
 and unzip it into your project folder. Then perform the remaining steps with these terminal commands.
 
 ```
-cd angular-lazy-images
+cd angular-ngx-lazy-images
 npm install
 npm start
 ```
@@ -251,7 +251,7 @@ Then install it from your other repo using a relative path to the dist folder:
 Every package on NPM has a unique name, and so should yours. 
 If you haven't already, now is the time to change the name of your library.
 
-Use your editor to search the project for all instances of `lazy-images` and change it
+Use your editor to search the project for all instances of `ngx-lazy-images` and change it
 to your intended name (also in `dash-case` format).
 The library name is mentioned on at least these files: 
 

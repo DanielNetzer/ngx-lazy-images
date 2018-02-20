@@ -26,7 +26,7 @@
       // other libraries
       'rxjs':                      'npm:rxjs',
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',
-      'lazy-images': 'npm:lazy-images/bundles/lazy-images.umd.js'
+      'ngx-lazy-images': 'npm:ngx-lazy-images/bundles/ngx-lazy-images.umd.js'
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {

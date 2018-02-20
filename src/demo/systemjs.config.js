@@ -39,7 +39,7 @@
       rxjs: {
         defaultExtension: 'js'
       },
-      'lazy-images': {
+      'ngx-lazy-images': {
         main: 'index.js',
         defaultExtension: 'js',
         meta: {

@@ -4,9 +4,9 @@ import { Observable } from 'rxjs/Observable';
 import { fromEvent } from 'rxjs/Observable/fromEvent';
 
 @Component({
-  selector: 'lazy-images',
-  templateUrl: './lazy-images.component.html',
-  styleUrls: ['./lazy-images.component.css']
+  selector: 'ngx-lazy-images',
+  templateUrl: './ngx-lazy-images.component.html',
+  styleUrls: ['./ngx-lazy-images.component.css']
 })
 export class LazyImagesComponent implements OnInit {
   @ViewChild('placeholder') placeholder: ElementRef;

@@ -2,22 +2,22 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { LibComponent } from './lib.component';
+import { LazyImagesComponent } from './ngx-lazy-images.component';
 
 describe('LibComponent', function () {
   let de: DebugElement;
-  let comp: LibComponent;
-  let fixture: ComponentFixture<LibComponent>;
+  let comp: LazyImagesComponent;
+  let fixture: ComponentFixture<LazyImagesComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [LibComponent]
+      declarations: [LazyImagesComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LibComponent);
+    fixture = TestBed.createComponent(LazyImagesComponent);
     comp = fixture.componentInstance;
     de = fixture.debugElement.query(By.css('h2'));
   });

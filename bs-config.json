@@ -3,7 +3,7 @@
     "baseDir": "src/demo",
     "routes": {
       "/node_modules": "node_modules",
-      "/lazy-images": "src/lazy-images"
+      "/ngx-lazy-images": "src/ngx-lazy-images"
     }
   }
 }

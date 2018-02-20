@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { LazyImagesModule } from 'lazy-images';
+import { LazyImagesModule } from 'ngx-lazy-images';
 
 import { AppComponent } from './app.component';
 
