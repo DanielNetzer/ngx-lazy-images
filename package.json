@@ -1,6 +1,6 @@
 {
   "name": "ngx-lazy-images",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "lazy loaded images with a small thumbnail, similar to Medium way of loading large images.",
   "main": "./bundles/ngx-lazy-images.umd.js",
   "module": "./ngx-lazy-images.es5.js",
@@ -40,21 +40,26 @@
     "release": "standard-version"
   },
   "peerDependencies": {
-    "@angular/core": ">=4.0.0 <5.0.0 || >=4.0.0-beta <5.0.0"
+    "@angular/core": ">=4.0.0 || >=4.0.0-beta"
   },
   "devDependencies": {
-    "@angular/common": "~4.1.3",
-    "@angular/compiler": "~4.1.3",
-    "@angular/compiler-cli": "~4.1.3",
-    "@angular/core": "~4.1.3",
-    "@angular/platform-browser": "~4.1.3",
-    "@angular/platform-browser-dynamic": "~4.1.3",
+    "@angular/animations": "^5.2.5",
+    "@angular/cdk": "^5.2.2",
+    "@angular/common": "^5.2.5",
+    "@angular/compiler": "~5.2.5",
+    "@angular/compiler-cli": "~5.2.5",
+    "@angular/core": "^5.2.5",
+    "@angular/forms": "^5.2.5",
+    "@angular/material": "^5.2.2",
+    "@angular/platform-browser": "~5.2.5",
+    "@angular/platform-browser-dynamic": "~5.2.5",
     "@types/jasmine": "2.5.36",
     "@types/node": "^6.0.46",
     "camelcase": "^4.0.0",
     "concurrently": "3.4.0",
     "core-js": "^2.4.1",
     "glob": "^7.1.1",
+    "hammerjs": "^2.0.8",
     "jasmine-core": "^2.5.2",
     "karma": "^1.5.0",
     "karma-chrome-launcher": "^2.0.0",
@@ -67,15 +72,16 @@
     "lite-server": "^2.2.2",
     "rimraf": "^2.6.1",
     "rollup": "^0.42.0",
-    "rollup-plugin-sourcemaps": "^0.4.1",
-    "rollup-plugin-uglify": "^2.0.1",
     "rollup-plugin-commonjs": "^8.0.2",
     "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-sourcemaps": "^0.4.1",
+    "rollup-plugin-uglify": "^2.0.1",
     "rxjs": "^5.0.1",
     "standard-version": "^4.0.0",
     "systemjs": "^0.19.40",
+    "tslib": "^1.9.0",
     "tslint": "^4.4.2",
-    "typescript": "~2.3.0",
+    "typescript": "~2.5.3",
     "zone.js": "^0.8.4"
   }
 }

@@ -13,7 +13,7 @@ export class LazyImagesComponent implements OnInit {
 
   @Input() largeImgUrl: string;
   @Input() thumbnailUrl: string;
-  @Input() lazyClasses: Object = {};
+  @Input() styling: Object = {};
 
   private largeImageEl: HTMLImageElement;
 
@@ -23,8 +23,8 @@ export class LazyImagesComponent implements OnInit {
     this.largeImageEl = this.renderer.createElement('img');
     this.renderer.setAttribute(this.largeImageEl, 'src', this.largeImgUrl);
 
-    Object.keys(this.lazyClasses).forEach((styleKey) => {
-      this.renderer.setStyle(this.placeholder.nativeElement, styleKey, this.lazyClasses[styleKey]);
+    Object.keys(this.styling).forEach((styleKey) => {
+      this.renderer.setStyle(this.placeholder.nativeElement, styleKey, this.styling[styleKey]);
     });
 
     this.renderer.listen(this.largeImageEl, 'load', (event) => {

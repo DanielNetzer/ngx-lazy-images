@@ -1,1 +1,83 @@
-<ngx-lazy-images></ngx-lazy-images>
+<div class="page">
+    <mat-toolbar class="navbar">
+        <span>NGX Lazy Images</span>
+        <span class="example-spacer"></span>
+        <a href="https://github.com/DanielNetzer/ngx-lazy-images" target="_blank">
+            <i class="fab fa-github example-icon"></i>
+        </a>
+    </mat-toolbar>
+
+    <div class="container">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>Such WOW</mat-card-title>
+                <mat-card-subtitle>Default lazy image</mat-card-subtitle>
+            </mat-card-header>
+            <div class="custom-card-img">
+                <ngx-lazy-image [largeImgUrl]="largeImgUrl" [thumbnailUrl]="thumbnailUrl"></ngx-lazy-image>
+            </div>
+            <mat-card-content>
+                <code>
+                        <pre #defaultCodeEl>
+                            {{defaultCode}}
+                        </pre>
+                        <button mat-icon-button class="content-copy" (click)="onContentCopy(defaultCodeEl)">
+                            <mat-icon>content_copy</mat-icon>
+                        </button>
+                    </code>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>Many Awesome</mat-card-title>
+                <mat-card-subtitle>lazy image with custom styling</mat-card-subtitle>
+            </mat-card-header>
+            <div class="custom-card-img">
+                <ngx-lazy-image [styling]="{'border-radius': '12%'}" [largeImgUrl]="largeImgUrl" [thumbnailUrl]="thumbnailUrl"></ngx-lazy-image>
+            </div>
+            <mat-card-content>
+                <code>
+                        <pre #customStyleCodeEl>
+                            {{customStyleCode}}
+                        </pre>
+                        <button mat-icon-button class="content-copy" (click)="onContentCopy(customStyleCodeEl)">
+                            <mat-icon>content_copy</mat-icon>
+                        </button>
+                    </code>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>Them Twists</mat-card-title>
+                <mat-card-subtitle>Lazy image with mat-card-image tag</mat-card-subtitle>
+            </mat-card-header>
+            <div mat-card-image>
+                <ngx-lazy-image [largeImgUrl]="largeImgUrl" [thumbnailUrl]="thumbnailUrl"></ngx-lazy-image>
+            </div>
+            <mat-card-content>
+                <code>
+                        <pre #matCardImgCodeEl>
+                            {{matCardImgCode}}
+                        </pre>
+                        <button mat-icon-button class="content-copy" (click)="onContentCopy(matCardImgCodeEl)">
+                            <mat-icon>content_copy</mat-icon>
+                        </button>
+                    </code>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+
+<footer>
+    <mat-toolbar>
+        <h6>Powered by
+            <a href="http://over.ai" target="_blank">Over.AI</a>
+        </h6>
+        <span class="example-spacer"></span>
+        <h6>Inspired by -
+            <a href="https://medium.com/@jmperezperez/more-examples-of-progressive-image-loading-f258be9f440b" target="_blank">More examples of Progressive Image Loading</a>
+        </h6>
+    </mat-toolbar>
+</footer>
