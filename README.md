@@ -34,7 +34,7 @@ import { LazyImagesModule } from 'ngx-lazy-images';
 
 ### Example Usage
 
-Can be found at the [demo page]()
+Can be found at the [demo page](https://danielnetzer.github.io/ngx-lazy-images/)
 
 ### API
 
