@@ -1,6 +1,6 @@
 {
   "name": "ngx-lazy-images",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "lazy loaded images with a small thumbnail, similar to Medium way of loading large images.",
   "main": "./bundles/ngx-lazy-images.umd.js",
   "module": "./ngx-lazy-images.es5.js",
