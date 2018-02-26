@@ -7,7 +7,7 @@ import { MatSnackBar } from '@angular/material';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public largeImgUrl = 'https://admissions.vanderbilt.edu/insidedores/manage/wp-content/uploads/doge-pattern-27481-2880x1800-650x406.jpg';
+  public largeImgUrl = 'https://thebitcoinpub-91d3.kxcdn.com/uploads/default/original/2X/0/0266fd5fac0c66b27ac1e152d9ca12109e9d74fd.jpeg';
   public thumbnailUrl = 'https://cdn-images-1.medium.com/freeze/max/27/1*sg-uLNm73whmdOgKlrQdZA.jpeg?q=20';
 
   defaultCode = `

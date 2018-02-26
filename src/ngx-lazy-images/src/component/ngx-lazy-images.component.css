@@ -16,7 +16,11 @@
     transition: opacity 1s linear;
 }
 
-.ngx-lazy-placeholder img.loaded {
+.ngx-lazy-placeholder .ngx-lazy-img-small.loaded {
+    opacity: 1;
+}
+
+.ngx-lazy-placeholder .ngx-lazy-img-large.loaded {
     opacity: 1;
 }
 

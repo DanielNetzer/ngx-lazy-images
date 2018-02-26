@@ -15,21 +15,20 @@ export class LazyImagesComponent implements OnInit {
   @Input() thumbnailUrl: string;
   @Input() styling: Object = {};
 
-  private largeImageEl: HTMLImageElement;
-
   constructor(private renderer: Renderer2) { }
 
   ngOnInit() {
-    this.largeImageEl = this.renderer.createElement('img');
-    this.renderer.setAttribute(this.largeImageEl, 'src', this.largeImgUrl);
+    const largeImageEl = this.renderer.createElement('img');
+    this.renderer.setAttribute(largeImageEl, 'src', this.largeImgUrl);
+    this.renderer.addClass(largeImageEl, 'ngx-lazy-img-large');
 
     Object.keys(this.styling).forEach((styleKey) => {
       this.renderer.setStyle(this.placeholder.nativeElement, styleKey, this.styling[styleKey]);
     });
 
-    this.renderer.listen(this.largeImageEl, 'load', (event) => {
-      this.renderer.addClass(this.largeImageEl, 'loaded');
-      this.renderer.appendChild(this.placeholder.nativeElement, this.largeImageEl);
+    this.renderer.listen(largeImageEl, 'load', (event) => {
+      this.renderer.appendChild(this.placeholder.nativeElement, largeImageEl);
+      this.renderer.addClass(largeImageEl, 'loaded');
     });
   }
 
